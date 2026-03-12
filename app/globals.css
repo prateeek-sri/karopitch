@@ -128,3 +128,57 @@
     @apply bg-background text-foreground;
   }
 }
+
+/* Infinite scroll animation */
+@keyframes scroll {
+  to {
+    transform: translate(calc(-50% - 0.5rem));
+  }
+}
+
+.animate-scroll {
+  animation: scroll var(--animation-duration, 40s) linear infinite var(--animation-direction, forwards);
+}
+
+/* Floating animation */
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+/* Gradient animation */
+@keyframes gradient-shift {
+  0%, 100% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+}
+
+.animate-gradient {
+  background-size: 200% 200%;
+  animation: gradient-shift 8s ease infinite;
+}
+
+/* Beam animation */
+@keyframes beam {
+  0% {
+    transform: translateY(-100%) translateX(-100%);
+  }
+  100% {
+    transform: translateY(100%) translateX(100%);
+  }
+}
+
+.animate-beam {
+  animation: beam 3s ease-in-out infinite;
+}

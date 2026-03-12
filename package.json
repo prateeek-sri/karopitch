@@ -11,6 +11,8 @@
   "dependencies": {
     "@hookform/resolvers": "^3.9.1",
     "@vercel/analytics": "1.6.1",
+    "gsap": "^3.12.5",
+    "cobe": "^0.6.3",
     "@radix-ui/react-accordion": "1.2.12",
     "@radix-ui/react-alert-dialog": "1.1.15",
     "@radix-ui/react-aspect-ratio": "1.1.8",
